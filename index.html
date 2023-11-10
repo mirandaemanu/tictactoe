@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <div class="header header">Tic Tac Toe</div>
+    <dialog class="modal-menu" open>
+        <form method="dialog" class="modal-form">
+            <div class="modal-container">
+                <div class="modal-menu-entry">
+                    <div class="img-container">
+                        <img src="./icons/cross-icon.png" alt="X icon" class="player-img">
+                    </div>
+                    <label for="playerOneName" class="modal-label">Player one name</label>
+                    <input type="text" name="playerOneName" id="playerOneName" class="modal-input" maxlength="15">
+                </div>
+                <div class="modal-menu-entry">
+                    <div class="img-container">
+                        <img src="./icons/circle-icon.svg" alt="X icon" class="player-img">
+                    </div>
+                    <label for="playerTwoName" class="modal-label">Player two name</label>
+                    <input type="text" name="playerTwoName" id="playerTwoName" class="modal-input" maxlength="15">
+                </div>
+            </div>
+            <button class="modal-btn">Start Game</button>
+        </form>
+    </dialog>
+    <div class="score-container">
+        <p><span class="player-one-name">Player One</span> Score: <span class="player-one-score">0</span></p>
+        <p><span class="player-two-name">Player Two</span> Score: <span class="player-two-score">0</span></p>
+    </div>
     <div class="container">
         
     </div>
-    
+    <p class="winner-announcement"></p>
+    <button class="reset-btn">Restart</button>
+    <footer class="footer">
+        <p class="footer-text">Created by mirandaemanu</p>
+        <a href="https://github.com/mirandaemanu/tictactoe" target="_noblank"><img src="./icons/logo-github.svg" alt="github icon" class="footer-icon"></a>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
